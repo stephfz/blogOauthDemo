@@ -1,0 +1,14 @@
+
+
+
+<% if current_user %>
+  Welcome <%= current_user.name %>!
+  <%= link_to "Sign Out", signout_path %>
+<% else %>
+  <%= link_to "Sign in with Twitter", "/auth/twitter" %>
+<% end %>
+
+
+
+<h1>Hello, Rails!</h1>
+<%= link_to "My Blog", :controller => "posts" %>
